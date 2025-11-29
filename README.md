@@ -15,6 +15,7 @@ Bubble sort works by repeatedly going over each value in the unsorted part list 
 Algorithm Steps:
 
 Initialize: Start with an unsorted array of integers
+
 Outer Loop: For each element position from the beginning to the end of the array:
 
 Inner Loop: Compare adjacent elements from the start up to the last unsorted position:
