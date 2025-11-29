@@ -9,7 +9,10 @@ https://github.com/user-attachments/assets/6a9a145d-811d-421b-b817-081974b9e85c
 *this video is at 4x speed
 
 ## Problem Breakdown & Computational Thinking 
-Bubble sort works by repeatedly going over each value in the unsorted part list and swapping values which are larger then the value at the next index forward, this leads to the highest value being moved to the right-side of the list, which is then considered sorted and not included in the next swapping operation. This code provides a gradio based GUI/visualizer to show how bubble sort works of a list of "Array Size" integer entries of 0 to "Array Max" size.
+Bubble sort is a simple comparison-based sorting algorithm that repeatedly steps through a list, comparing adjacent elements and swapping them if they're in the wrong order. Each pass through the list iteratively pushes the largest unsorted element to its correct position at the end, gradually building a sorted section from right to left. The algorithm terminates when a complete pass occurs with no swaps, indicating the list is fully sorted.
+
+
+This code provides a gradio based GUI/visualizer to show how bubble sort works of a list of "Array Size" integer entries of 0 to "Array Max" size.
 
 ## Steps to Run 
 Algorithm Steps:
