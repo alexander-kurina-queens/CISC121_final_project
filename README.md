@@ -16,7 +16,8 @@ Algorithm Steps:
 
 Initialize: Start with an unsorted array of integers
 Outer Loop: For each element position from the beginning to the end of the array:
-  Inner Loop: Compare adjacent elements from the start up to the last unsorted position:
+
+Inner Loop: Compare adjacent elements from the start up to the last unsorted position:
   1. If the current element is greater than the next element, swap them
   2. Continue comparing and swapping until reaching the end of the unsorted section  
   3. After each complete pass, the largest unsorted element is now in its correct final position, reduce the unsorted section by one element
