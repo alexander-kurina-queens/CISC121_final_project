@@ -23,7 +23,7 @@ Inner Loop: Compare adjacent elements from the start up to the last unsorted pos
   2. Continue comparing and swapping until reaching the end of the unsorted section  
   3. After each complete pass, the largest unsorted element is now in its correct final position, reduce the unsorted section by one element
 
-Running the Application:
+Steps for running the Application:
   1. Access the hugging face space through the provided link
   2. Set "Array Size" to specify how many elements to sort
   3. Set "Array Max" to define the maximum value for generated numbers
