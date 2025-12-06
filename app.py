@@ -6,23 +6,27 @@ import io
 from PIL import Image
 
 def bubble_sort_generator(arr):
-    n = len(arr)
+    n = len(arr) # Track unsorted region size
     swapped = True
+    # yield initial array to visualizer
     yield arr, -1, -1, "initial array state"
-    while swapped:
+    while swapped: # Continue until no swaps occur
         i = 0
         swapped = False
-        while i < n - 1:
+        while i < n - 1: # Compare adjacent elements up to unsorted region
             if arr[i] > arr[i+1]:
-                arr[i], arr[i+1] = arr[i+1], arr[i]
+                arr[i], arr[i+1] = arr[i+1], arr[i] # if next value is less than cur value, swap
+                # yield array and swap description to visualizer
                 yield arr, i, i+1, f"swap {i} <-> {i+1}"
                 swapped = True
             else:
+                # yield array and window shift description to visualizer
                 yield arr, i, i+1, f"move window {i},{i+1} -> {i+1},{i+2}"
                 
             i += 1
-        n -= 1
-                
+        n -= 1 # Shrink unsorted region (largest element now in place)
+
+    # yield sorted array to visualizer
     yield arr, -1, -1, "sorted"
 
 def visualize_sort(array_size, array_maximum, delay):
@@ -92,4 +96,5 @@ if __name__ == "__main__":
         title="Bubble Search App",
         description="sorts an integer array using the bubble sort algorithm while displaying operations and array states with a real-time visualizer"
     ).launch()
+
 
